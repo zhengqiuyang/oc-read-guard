@@ -1,0 +1,34 @@
+{
+  "name": "oc-read-guard",
+  "version": "0.1.0",
+  "description": "Deterministic prompt-injection interception for OpenCode: tool results are scanned before they enter model context — quarantined or blocked, zero LLM calls in the trust path",
+  "type": "module",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build",
+    "sync": "node scripts/sync-rig-core.mjs",
+    "test": "npm run sync && npm run build && node test/run-tests.mjs"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "prompt-injection",
+    "ai-agents",
+    "security"
+  ],
+  "devDependencies": {
+    "@opencode-ai/plugin": "^1.19.0",
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
