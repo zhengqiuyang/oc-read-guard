@@ -1,6 +1,6 @@
 {
   "name": "oc-read-guard",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Deterministic prompt-injection interception for OpenCode: tool results are scanned before they enter model context — quarantined or blocked, zero LLM calls in the trust path",
   "type": "module",
   "license": "MIT",

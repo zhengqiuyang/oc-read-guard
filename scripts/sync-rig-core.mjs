@@ -22,9 +22,9 @@ const sourceRoot = process.env.RIG_SRC
 const vendorRoot = join(pluginRoot, 'src', 'vendor', 'oc-rig-core');
 
 /** The engine closure: applyRules (rules.ts) pulls only util.ts. */
-const FILES = ['rules.ts', 'util.ts'];
+const FILES = ['rules.ts', 'util.ts', 'normalize.ts'];
 /** Imports allowed inside vendored files: intra-closure + node builtins only. */
-const ALLOWED_IMPORTS = new Set(['./util.js', './rules.js']);
+const ALLOWED_IMPORTS = new Set(['./util.js', './rules.js', './normalize.js']);
 
 function importsOf(source) {
   const imports = [];
