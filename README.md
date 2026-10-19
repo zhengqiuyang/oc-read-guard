@@ -1,6 +1,7 @@
 # oc-read-guard
 
 > **If this helps you, please give it a star** — it helps others find it. Thanks!
+
 Deterministic prompt-injection interception for
 [OpenCode](https://opencode.ai). Hooks `tool.execute.after`: every result the
 watched tools return (file reads, searches) is scanned by the
